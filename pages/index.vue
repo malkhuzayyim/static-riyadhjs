@@ -12,9 +12,14 @@
     <div class="subtitle-1 py-1">
       This is a brand new initiative, as of November 2019.
     </div>
-    <content-card id="brief">
+    <div class="text-right">
+      <v-btn @click="toHash(`team`)" color="primary">
+        Join the team
+      </v-btn>
+    </div>
+    <content-card id="intro">
       <template #title>
-        A brief
+        Intro
       </template>
       <template #body>
         The reason we're starting this is to help build a community for us, the
@@ -109,25 +114,36 @@
         modern tech stacks in the Javascript Ecosystem.
       </template>
     </content-card>
-    <content-card id="team">
+    <content-card id="team" class="white black--text" not-dark>
       <template #title>
         RiyadhJS Team - Looking for Help
       </template>
       <template #body>
-        The person starting this (myself) is Mohammed Alkhuzayyim, an Industrial
-        Engineer turned web developer, with a focus on Fullstack Javascript web
-        development. My favorite techstack is comprised of: PostgreSQL, Express,
-        Node, Vue, Vuetify.
-        <br />
-        <br />
-        I'm looking for people to help me scope this out further &amp; organize
-        it.
-        <br />
-        <br />
-        If you're interested, please fill out this small form:
-        <a href="" target="_blank">
-          Apply to be a Riyadh JS Core Member
-        </a>
+        <div class="pb-3">
+          The person starting this (myself) is Mohammed Alkhuzayyim, an
+          Industrial Engineer turned web developer, with a focus on Fullstack
+          Javascript web development. My favorite techstack is comprised of:
+          PostgreSQL, Express, Node, Vue, Vuetify.
+          <br />
+          <br />
+          I'm looking for people to help me scope this out further &amp;
+          organize it.
+          <br />
+          <br />
+          If you're interested, please fill out the form below, and I'll reach
+          out to schedule an initial meeting, the venue we will use will most
+          likely always be Astrolabs, mentioned above.
+        </div>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSed6C4Pzinmpj6T0HKc_jwqqpRxaPpGHKT_jYst-24WzM9L6A/viewform?embedded=true"
+          width="100%"
+          height="1700"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
       </template>
     </content-card>
   </div>
@@ -138,6 +154,15 @@ import ContentCard from "@@/components/ContentCard";
 export default {
   components: {
     "content-card": ContentCard
+  },
+  methods: {
+    toHash(hash) {
+      this.$vuetify.goTo(`#${hash}`, {
+        duration: 500,
+        offset: 50,
+        easing: "easeInOutCubic"
+      });
+    }
   }
 };
 </script>

@@ -5,7 +5,7 @@
         <slot name="title"></slot>
       </span>
     </div>
-    <v-divider class="my-2"></v-divider>
+    <v-divider :class="notDark ? `my-2 black` : `my-2`"></v-divider>
     <div class="body-2 pa-3">
       <slot name="body"></slot>
     </div>
@@ -13,5 +13,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    notDark: Boolean
+  }
+};
 </script>
