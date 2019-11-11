@@ -27,9 +27,9 @@
         Target Audience
       </template>
       <template #body>
-        People who're already working (or studying) in the web development space
-        (Fullstack / Frontend Only), and are interested in Javascript &amp; its
-        ecosystem of technologies.
+        People who're already working (or studying) in the web development
+        space, and are interested in Javascript &amp; its ecosystem of
+        technologies.
       </template>
     </content-card>
     <content-card id="frequency">
@@ -84,7 +84,7 @@
         Meetups Scope
       </template>
       <template #body>
-        The following is a list of technologies that I believe should be the
+        The following is a list of technologies that we believe should be the
         focus of this initiative:
         <br />
         - Javascript Frontend Technologies (Mainly Vue &amp; React)
@@ -115,7 +115,7 @@
       </template>
       <template #body>
         The person starting this (myself) is Mohammed Alkhuzayyim, an Industrial
-        Engineer turned web developer, with focus on Fullstack Javascript web
+        Engineer turned web developer, with a focus on Fullstack Javascript web
         development. My favorite techstack is comprised of: PostgreSQL, Express,
         Node, Vue, Vuetify.
         <br />
