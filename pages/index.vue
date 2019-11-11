@@ -1,75 +1,143 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a href="https://vuetifyjs.com" target="_blank"> documentation </a>.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a href="https://nuxtjs.org/" target="_blank">
-            Nuxt Documentation
-          </a>
-          <br />
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank">
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <div id="riyadhjs" class="py-12 px-1">
+    <div class="display-3 py-1">
+      <span class="ubunto">
+        Riyadh JS
+      </span>
+    </div>
+    <div class="subtitle-1 py-1">
+      On a mission to unite the javascript &amp; web development community in
+      Riyadh, Saudi Arabia.
+    </div>
+    <div class="subtitle-1 py-1">
+      This is a brand new initiative, as of November 2019.
+    </div>
+    <content-card id="brief">
+      <template #title>
+        A brief
+      </template>
+      <template #body>
+        The reason we're starting this is to help build a community for us, the
+        javascript enthusiasts, so we get visibility on who's out there doing
+        similar work, connect with them, collaborate, and share experiences.
+      </template>
+    </content-card>
+    <content-card id="audience">
+      <template #title>
+        Target Audience
+      </template>
+      <template #body>
+        People who're already working (or studying) in the web development space
+        (Fullstack / Frontend Only), and are interested in Javascript &amp; its
+        ecosystem of technologies.
+      </template>
+    </content-card>
+    <content-card id="frequency">
+      <template #title>
+        Meetups Frequency
+      </template>
+      <template #body>
+        The current idea is to have a monthly meetup, the first Saturday of
+        every month, at 4pm.
+      </template>
+    </content-card>
+    <content-card id="format">
+      <template #title>
+        Meetups Format
+      </template>
+      <template #body>
+        We hope to have each meetup structured as follows:
+        <br />
+        - 20-30 minutes where we'll have a pre-determined speaker cover a
+        topic/technology of interest, with an interesting demo or something of
+        the sort.
+        <br />
+        - 10-15 minutes of Q&amp;A regarding the topic at hand.
+        <br />
+        - Freeform discussion on whatever comes to mind &amp; planning the next
+        meetup.
+      </template>
+    </content-card>
+    <content-card id="venue">
+      <template #title>
+        Meetups Venue
+      </template>
+      <template #body>
+        We've discussed this with
+        <a href="https://astrolabs.com" target="_blank">
+          Astrolabs
+        </a>
+        and they're willing to provide a venue for the meetups, free of charge.
+        <br />
+        <br />
+        Their Riyadh location can be found here:
+        <br />
+        <a
+          href="https://www.google.ae/maps/place/%D8%A3%D8%B3%D8%AA%D8%B1%D9%88%D9%84%D8%A7%D8%A8%D8%B2%E2%80%AD/@24.8064543,46.6150945,21z/data=!4m5!3m4!1s0x3e2ee5973ff30251:0xe165035711dcf14f!8m2!3d24.8064668!4d46.6151907"
+        >
+          Google Maps Link
+        </a>
+      </template>
+    </content-card>
+    <content-card id="scope">
+      <template #title>
+        Meetups Scope
+      </template>
+      <template #body>
+        The following is a list of technologies that I believe should be the
+        focus of this initiative:
+        <br />
+        - Javascript Frontend Technologies (Mainly Vue &amp; React)
+        <br />
+        - NodeJS API Development (REST API's &amp; GraphQL)
+        <br />
+        - Databases (Can't do much without one)
+        <br />
+        - Deployment Solutions &amp; Platforms (think AWS, Heroku, Netlify,
+        etc.)
+        <br />
+        - Git &amp; Github Workflows
+        <br />
+        - Javascript Hybrid Development (Mobile &amp; Desktop apps)
+        <br />
+        <br />
+        This is not an exhaustive list, but you get the gist of where we're
+        going with this.
+        <br />
+        <br />
+        The idea is that most topics &amp; discussions should be related to
+        modern tech stacks in the Javascript Ecosystem.
+      </template>
+    </content-card>
+    <content-card id="team">
+      <template #title>
+        RiyadhJS Team - Looking for Help
+      </template>
+      <template #body>
+        The person starting this (myself) is Mohammed Alkhuzayyim, an Industrial
+        Engineer turned web developer, with focus on Fullstack Javascript web
+        development. My favorite techstack is comprised of: PostgreSQL, Express,
+        Node, Vue, Vuetify.
+        <br />
+        <br />
+        I'm looking for people to help me scope this out further &amp; organize
+        it.
+        <br />
+        <br />
+        If you're interested, please fill out this small form:
+        <a href="" target="_blank">
+          Apply to be a Riyadh JS Core Member
+        </a>
+      </template>
+    </content-card>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
+import ContentCard from "@@/components/ContentCard";
 export default {
   components: {
-    Logo,
-    VuetifyLogo
+    "content-card": ContentCard
   }
-}
+};
 </script>
