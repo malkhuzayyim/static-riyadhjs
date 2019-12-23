@@ -6,11 +6,9 @@
       </span>
     </div>
     <div class="subtitle-1 py-1">
-      On a mission to unite the javascript &amp; web development community in
-      Riyadh, Saudi Arabia.
-    </div>
-    <div class="subtitle-1 py-1">
-      This is a brand new initiative, as of November 2019.
+      A meetup for all things JS.
+      <br />
+      Located in Riyadh, Saudi Arabia.
     </div>
     <div class="text-right">
       <v-btn @click="toHash(`team`)" color="primary">
@@ -22,9 +20,9 @@
         Intro
       </template>
       <template #body>
-        The reason we're starting this is to help build a community for us, the
-        javascript enthusiasts, so we get visibility on who's out there doing
-        similar work, connect with them, collaborate, and share experiences.
+        The reason we're starting this is to help build a community for people
+        working in the web development space in Riyadh, Saudi Arabia. To
+        connect, collaborate, and share experiences.
       </template>
     </content-card>
     <content-card id="audience">
@@ -42,8 +40,7 @@
         Meetups Frequency
       </template>
       <template #body>
-        The current idea is to have a monthly meetup, the first Saturday of
-        every month, at 4pm.
+        We hope to be consistent with our meetups, about once a month.
       </template>
     </content-card>
     <content-card id="format">
@@ -51,16 +48,9 @@
         Meetups Format
       </template>
       <template #body>
-        We hope to have each meetup structured as follows:
-        <br />
-        - 20-30 minutes where we'll have a pre-determined speaker cover a
-        topic/technology of interest, with an interesting demo or something of
-        the sort.
-        <br />
-        - 10-15 minutes of Q&amp;A regarding the topic at hand.
-        <br />
-        - Freeform discussion on whatever comes to mind &amp; planning the next
-        meetup.
+        Each meetup would roughly last an hour, and will consist of a primary
+        topic, which will be covered by a speaker for in the first half hour.
+        The second half will usually be a free-format discussion.
       </template>
     </content-card>
     <content-card id="venue">
@@ -111,39 +101,25 @@
         <br />
         <br />
         The idea is that most topics &amp; discussions should be related to
-        modern tech stacks in the Javascript Ecosystem.
+        modern tech stacks in the Web Development Ecosystem.
       </template>
     </content-card>
-    <content-card id="team" class="white black--text" not-dark>
+    <content-card id="team">
       <template #title>
-        RiyadhJS Team - Looking for Help
+        RiyadhJS Team
       </template>
       <template #body>
         <div class="pb-3">
-          The person starting this (myself) is Mohammed Alkhuzayyim, an
-          Industrial Engineer turned web developer, with a focus on Fullstack
-          Javascript web development. My favorite techstack is comprised of:
-          PostgreSQL, Express, Node, Vue, Vuetify.
-          <br />
-          <br />
-          I'm looking for people to help me scope this out further &amp;
-          organize it.
-          <br />
-          <br />
-          If you're interested, please fill out the form below, and I'll reach
-          out to schedule an initial meeting, the venue we will use will most
-          likely always be Astrolabs, mentioned above.
+          As of now it's a team of one.
+          <br /><br />
+          - Mohammed Alkhuzayyim
+          <br /><br />
+          This is just getting started, if you'd like to be involved, please
+          feel free to introduce yourself by emailing me at
+          <a href="mailto:m.alkhuzayyim@gmail.com">
+            m.alkhuzayyim@gmail.com
+          </a>
         </div>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSed6C4Pzinmpj6T0HKc_jwqqpRxaPpGHKT_jYst-24WzM9L6A/viewform?embedded=true"
-          width="100%"
-          height="1700"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-        >
-          Loading…
-        </iframe>
       </template>
     </content-card>
   </div>
